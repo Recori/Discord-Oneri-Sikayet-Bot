@@ -4,7 +4,7 @@ const config = require("./config.json");
 const önerilimit = new Map()
 
 client.on("ready", () => {
-    client.user.setPresence({ activity: { name: "Developed by BoranGkdn" }, status: "online" });
+    client.user.setPresence({ activity: { name: "ONERI SIKAYET DM!" }, status: "online" });
 })
 client.on("ready", () => {
     const ses = client.channels.cache.get(config.seskanal);
@@ -32,4 +32,4 @@ client.on("message", async message => {
     };
 })
 
-client.login(config.token).then(() => console.log(`[ MATTHE ] ${client.user.username} olarak giriş yaptı!`)).catch(() => console.log(`[ BORANGKDN ] Bot giriş yapamadı!`));
+client.login(config.token).then(() => console.log(`[ MATTHE ] ${client.user.username} olarak giriş yaptı!`)).catch(() => console.log(`[ DKK ] Bot giriş yapamadı!`));
